@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('wallpaper.jpg');
+}
+
+#amount{
+    max-width:50px;
+}
+
+#psswrd{
+    font-weight: bold;
+    font-size:1.4em;
+    color:rgb(31, 6, 143)
+}

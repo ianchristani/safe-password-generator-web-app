@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container m-4">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-6">
+                <h1>Password Generator</h1>
+                <p>Chose the options to generate your password:</p>
+                <form id="myform" method="POST">
+                    <div class="form-check form-switch mb-2">
+                        <input type="checkbox" id="numbers" class="form-check-input">
+                        <label for="numbers" class="form-check-label">0,1,2,3,4,5,6,7,8,9</label>
+                    </div>
+                    <div class="form-check form-switch mb-2">
+                        <input type="checkbox" id="letters" class="form-check-input">
+                        <label for="letters" class="form-check-label">a,b,c,d,e,f,...</label>
+                    </div>
+                    <div class="form-check form-switch mb-2">
+                        <input type="checkbox" id="cletters" class="form-check-input">
+                        <label for="cletters" class="form-check-label">A,B,C,D,E,F,...</label>
+                    </div>
+                    <div class="form-check form-switch mb-2">
+                        <input type="checkbox" id="symbols" class="form-check-input">
+                        <label for="symbols" class="form-check-label">!, @, #, $, %, ^, &, ?, `, ~</label>
+                    </div>
+                    <div class="form-check form-switch mb-2">
+                        <input type="checkbox" id="signs" class="form-check-input">
+                        <label for="signs" class="form-check-label">[, ], {, }, |, -, +, <, >, /</label>
+                    </div>
+                    <div class="col-3 mt-4 mb-4">
+                        <label for="amount" class="form-check-label" id="amount-label">Amount of characters: </label>
+                        <input type="text" id="amount" class="form-control" required>                                                
+                    </div>
+                    <button type="submit" class="btn btn-info mb-2" id="button">Create</button>
+                </form>
+                <div class="container mt-4 mb-4" id="show">
+                    <p id="result"><strong>The generated password is:</strong></p>
+                    <p id="psswrd"></p>                    
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+</html>
