@@ -1,1 +1,1 @@
-The project is available on: https://psswrdgen.surge.sh/
+The project is deployed on: https://psswrdgen.surge.sh/
